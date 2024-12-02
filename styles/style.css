@@ -1,0 +1,150 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.margin-auto{
+    margin: auto;
+}
+
+.work {
+    background-color: #ff8b64;
+}
+
+.play {
+    background-color: #55c2e6;
+}
+
+.study {
+    background-color: #ff5c7c;
+}
+
+.exercise {
+    background-color: #4acf81;
+}
+
+.social {
+    background-color: #7536d3;
+}
+
+.self-care {
+    background-color: #f1c75b;
+}
+
+.container {
+    width: 80%;
+    border: 0.1rem solid black;
+    margin: 10rem auto 10rem;
+    display: flex;
+    justify-content: space-between;
+    height: 33rem;
+}
+
+/* container left */
+.container-left {
+    width: 24%;
+    background: silver;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-image-size {
+    width: 5rem;
+    border: white 4px solid;
+    border-radius: 50%;
+}
+
+.profile-top {
+    background-color: cyan;
+    padding: 1rem;
+    text-align: center;
+    height: 57%;
+}
+
+.profile-bottom {
+    background-color: aquamarine;
+    height: 43%;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-holder{
+    margin: auto;
+    width: 80%;
+}
+
+.botton-margin-middle{
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+}
+
+.profile-buton {
+    width: 100%;
+    text-align: left;
+    font-size: larger;
+}
+/* container left */
+
+
+/* container right */
+.container-right {
+    width: 74%;
+    background: gold;
+}
+
+.margin-fix{
+    margin-top: 1.32rem;
+}
+
+.responsive-content {
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    height: 48%;
+}
+
+.cards{
+    width: 31.5%;
+    background-color: yellowgreen;
+}
+
+.card-top{
+    height: 18%;
+    background-color: orange;
+    overflow: hidden;
+}
+
+.card-bottom{
+    height: 82%;
+    background-color: blueviolet;
+}
+
+.card-margin{
+    padding-top: 1.5rem;
+}
+
+.card-content{
+    padding-left: 2rem;
+}
+
+.card-padding-fix{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-title{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.card-title-hrs{
+    font-size: 4.5rem;
+    color: white;
+}
+
+.card-lastweek{
+    
+}
