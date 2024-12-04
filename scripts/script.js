@@ -1,15 +1,12 @@
-// Made by: robert
+// Made by: robert g
 // inspiered by previous projects from Mr. C at the one school
 // added psudo code and notes to help read the code
 
 // Fetch data from JSON file
-function getJsonData() {
-    return fetch("../data/data.json")
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-            return data;
-        });
+async function getJsonData() {
+    const response = await fetch("../data/data.json");// fetch the data from the data.json file
+    const data = await response.json();// convert the response to json
+    return data;// return the data
 }
 
 // Display data on the page
@@ -19,10 +16,10 @@ function displayData(data, timeframe) {
         const current = card.querySelector("#current");// select the current element in the card
         const previous = card.querySelector("#previous");// select the previous element in the card
 
-        // set the text content of the current element to the current hours
+        // set the text content of the current element to the current hours using "template literal"
         current.textContent = `${item.timeframes[timeframe].current}hrs`;
 
-        // set the text content of the previous element to the previous hours and have the dynamic text for the timeframe
+        // set the text content of the previous element to the previous hours and have the dynamic text for the timeframe using "template literal"
         const timeframeText = timeframe.charAt(0).toUpperCase() + timeframe.slice(1);// capitalize the first letter of the timeframe
         const previousHours = item.timeframes[timeframe].previous;// get the previous hours
         previous.textContent = `Last ${timeframeText} - ${previousHours}hrs`;// set the text content of the previous element

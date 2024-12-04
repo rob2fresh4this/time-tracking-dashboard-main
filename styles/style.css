@@ -1,51 +1,51 @@
 @font-face {
-    font-family: 'Rubik';
-    src: url('../assets/fonts/Rubik/Rubik-VariableFont_wght.ttf') format('truetype');
+    font-family: "Rubik";
+    src: url("../assets/fonts/Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
 }
 
 body {
-    background-color: #0B132A;
+    background-color: #0b132a;
     color: white;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: lighter;
     margin: 0;
     padding: 0;
 }
 
-.margin-auto{
+.margin-auto {
     margin: auto;
 }
 
 .work {
-    background-color: #FF8C66 !important;
+    background-color: #ff8c66 !important;
 }
 
 .play {
-    background-color: #56C2E6 !important;
+    background-color: #56c2e6 !important;
 }
 
 .study {
-    background-color: #FF5C7C !important;
+    background-color: #ff5c7c !important;
 }
 
 .exercise {
-    background-color: #4ACF81 !important;
+    background-color: #4acf81 !important;
 }
 
 .social {
-    background-color: #7536D3 !important;
+    background-color: #7536d3 !important;
 }
 
 .self-care {
-    background-color: #F1C75B !important;
+    background-color: #f1c75b !important;
 }
 
-.bottom-card-color{
-    background-color: #1C204B !important;
+.bottom-card-color {
+    background-color: #1c204b !important;
 }
 
-.profile-color{
-    background-color: #5747EA !important;
+.profile-color {
+    background-color: #5747ea !important;
 }
 
 .container {
@@ -67,11 +67,11 @@ body {
     width: 5rem;
     border: white 4px solid;
     border-radius: 50%;
+    
 }
 
 .profile-top {
     padding: 1rem;
-    text-align: center;
     height: 57%;
     border-radius: 1rem 1rem 0 0;
 }
@@ -80,16 +80,17 @@ body {
     height: 43%;
     display: flex;
     flex-direction: column;
+    border-radius: 0 0 1rem 1rem;
 }
 
-.button-holder{
+.button-holder {
     margin: auto;
     width: 80%;
 }
 
-.botton-margin-middle{
-    margin-top: .4rem;
-    margin-bottom: .4rem;
+.botton-margin-middle {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
 }
 
 .profile-buton {
@@ -98,29 +99,33 @@ body {
     font-size: larger;
     border: transparent;
     background-color: transparent;
-    color: #71769E;
+    color: #71769e;
 }
 
-.profile-text-fix{
-    margin-top: 4rem !important;
+.profile-text-fix {
+    margin-top: 1rem !important;
     text-align: left;
     width: 80%;
     margin: auto;
 }
 
-.profile-name{
+.profile-img-fix{
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+.profile-name {
     font-size: 2rem;
 }
 
 /* container left */
-
 
 /* container right */
 .container-right {
     width: 74%;
 }
 
-.margin-fix{
+.margin-fix {
     margin-top: 1.32rem;
 }
 
@@ -131,14 +136,14 @@ body {
     height: 48%;
 }
 
-.cards{
+.cards {
     width: 31.5%;
     background-color: yellowgreen;
     border-radius: 1rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-.card-top{
+.card-top {
     height: 18%;
     background-color: orange;
     overflow: hidden;
@@ -146,43 +151,71 @@ body {
     padding-right: 1.5rem;
 }
 
-.card-title{
+.card-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 88%;
 }
 
-.card-bottom{
+.card-tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.card-tooltip .card-tool-tip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    /* Position the tooltip */
+}
+
+.card-tooltip:hover .card-tool-tip-text {
+    visibility: visible;
+}
+
+
+
+.card-bottom {
     height: 82%;
     background-color: blueviolet;
 }
 
-.card-margin{
+.card-margin {
     padding-top: 1.5rem;
 }
 
-.card-content{
+.card-content {
     padding-left: 2rem;
 }
 
-.card-padding-fix{
+.card-padding-fix {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-.card-title{
+.card-title {
     font-size: 1.3rem;
     font-weight: bold;
 }
 
-.card-title-hrs{
+.card-title-hrs {
     font-size: 4.5rem;
     color: white;
 }
 
 /* container right */
-
 
 /* media queries */
 @media (max-width: 1024px) {
@@ -190,11 +223,19 @@ body {
         width: 90%;
     }
 
-    .card-title-hrs{
+    .card-title-hrs {
         font-size: 2.5rem;
     }
 }
 
-@media (max-width: 425px) {
-    
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .card-title-hrs {
+        font-size: 2rem;
+    }
 }
+
+@media (max-width: 425px) {}
