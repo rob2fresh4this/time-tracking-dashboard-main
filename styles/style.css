@@ -306,4 +306,17 @@ body {
         width: 33%;
         text-align: center;
     }
+
+    .responsive-profile{
+        display: flex;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+    }
+    
+    .profile-img-fix{
+        width: auto;
+        margin: 0 1rem;
+    }
 }
