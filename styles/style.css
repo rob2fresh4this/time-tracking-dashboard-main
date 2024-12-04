@@ -89,8 +89,8 @@ body {
 }
 
 .botton-margin-middle {
-    margin-top: 0.4rem;
-    margin-bottom: 0.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .profile-buton {
@@ -100,6 +100,14 @@ body {
     border: transparent;
     background-color: transparent;
     color: #71769e;
+}
+
+.profile-button.active {
+    color: white !important;
+}
+
+.profile-report{
+    color: #BDCCFF;
 }
 
 .profile-text-fix {
@@ -190,6 +198,10 @@ body {
 .card-bottom {
     height: 82%;
     background-color: blueviolet;
+}
+
+.card-lastweek{
+    color: #BDCCFF;
 }
 
 .card-margin {
