@@ -4,8 +4,10 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #0B132A;
+    color: white;
     font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
     margin: 0;
     padding: 0;
 }
@@ -15,32 +17,39 @@ body {
 }
 
 .work {
-    background-color: #ff8b64;
+    background-color: #FF8C66 !important;
 }
 
 .play {
-    background-color: #55c2e6;
+    background-color: #56C2E6 !important;
 }
 
 .study {
-    background-color: #ff5c7c;
+    background-color: #FF5C7C !important;
 }
 
 .exercise {
-    background-color: #4acf81;
+    background-color: #4ACF81 !important;
 }
 
 .social {
-    background-color: #7536d3;
+    background-color: #7536D3 !important;
 }
 
 .self-care {
-    background-color: #f1c75b;
+    background-color: #F1C75B !important;
+}
+
+.bottom-card-color{
+    background-color: #1C204B !important;
+}
+
+.profile-color{
+    background-color: #5747EA !important;
 }
 
 .container {
     width: 80%;
-    border: 0.1rem solid black;
     margin: 10rem auto 10rem;
     display: flex;
     justify-content: space-between;
@@ -50,7 +59,6 @@ body {
 /* container left */
 .container-left {
     width: 24%;
-    background: silver;
     display: flex;
     flex-direction: column;
 }
@@ -62,14 +70,13 @@ body {
 }
 
 .profile-top {
-    background-color: cyan;
     padding: 1rem;
     text-align: center;
     height: 57%;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .profile-bottom {
-    background-color: aquamarine;
     height: 43%;
     display: flex;
     flex-direction: column;
@@ -89,14 +96,28 @@ body {
     width: 100%;
     text-align: left;
     font-size: larger;
+    border: transparent;
+    background-color: transparent;
+    color: #71769E;
 }
+
+.profile-text-fix{
+    margin-top: 4rem !important;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+}
+
+.profile-name{
+    font-size: 2rem;
+}
+
 /* container left */
 
 
 /* container right */
 .container-right {
     width: 74%;
-    background: gold;
 }
 
 .margin-fix{
@@ -105,7 +126,6 @@ body {
 
 .responsive-content {
     width: 100%;
-    background-color: beige;
     display: flex;
     justify-content: space-between;
     height: 48%;
@@ -114,12 +134,23 @@ body {
 .cards{
     width: 31.5%;
     background-color: yellowgreen;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .card-top{
     height: 18%;
     background-color: orange;
     overflow: hidden;
+    text-align: right;
+    padding-right: 1.5rem;
+}
+
+.card-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 88%;
 }
 
 .card-bottom{
@@ -148,4 +179,22 @@ body {
 .card-title-hrs{
     font-size: 4.5rem;
     color: white;
+}
+
+/* container right */
+
+
+/* media queries */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .card-title-hrs{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    
 }
