@@ -67,7 +67,6 @@ body {
     width: 5rem;
     border: white 4px solid;
     border-radius: 50%;
-    
 }
 
 .profile-top {
@@ -107,8 +106,8 @@ body {
     color: white;
 }
 
-.profile-report{
-    color: #BDCCFF;
+.profile-report {
+    color: #bdccff;
 }
 
 .profile-text-fix {
@@ -118,7 +117,7 @@ body {
     margin: auto;
 }
 
-.profile-img-fix{
+.profile-img-fix {
     width: 80%;
     margin: 1.5rem auto;
 }
@@ -195,22 +194,21 @@ body {
     visibility: visible;
 }
 
-.hover-white{
-    color: #BDCCFF;
+.hover-white {
+    color: #bdccff;
 }
 
-.hover-white:hover{
+.hover-white:hover {
     color: white;
 }
-
 
 .card-bottom {
     height: 82%;
     background-color: blueviolet;
 }
 
-.card-lastweek{
-    color: #BDCCFF;
+.card-lastweek {
+    color: #bdccff;
 }
 
 .card-margin {
@@ -259,4 +257,53 @@ body {
     }
 }
 
-@media (max-width: 425px) {}
+@media (max-width: 425px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container-left,
+    .container-right {
+        width: 100%;
+    }
+
+    .responsive-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cards {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .card-title-hrs {
+        font-size: 1.5rem;
+    }
+
+    .responsive-card {
+        max-width: 88%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-top {
+        height: 3rem;
+    }
+
+    .margin-fix{
+        margin: 0;
+    }
+
+    .button-holder{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .profile-buton{
+        width: 33%;
+        text-align: center;
+    }
+}
