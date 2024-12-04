@@ -27,9 +27,8 @@ function displayData(data, timeframe) {
 }
 
 // Add event listener to each button
-document.querySelectorAll(".profile-buton").forEach(button => {// select all buttons with the class profile-button
-    button.addEventListener("click", (event) => {// add event listener to each button
-        const timeframe = event.target.textContent.toLowerCase();// get the text content of the button and make it lowercase
+["daily", "weekly", "monthly"].forEach(timeframe => {// loop through each timeframe
+    document.getElementById(timeframe).addEventListener("click", () => {// add event listener to the button with the id of the timeframe
         getJsonData().then(data => displayData(data, timeframe));// get the data and display it with the timeframe
     });
 });
