@@ -250,6 +250,7 @@ body {
 @media (max-width: 768px) {
     .container {
         width: 95%;
+        font-size: small;
     }
 
     .card-title-hrs {
@@ -257,7 +258,7 @@ body {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 751px) {
     .container {
         flex-direction: column;
         height: auto;
