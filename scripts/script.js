@@ -26,7 +26,8 @@ function displayData(data, timeframe) {
     });
 }
 
-const buttons = document.querySelectorAll(".profile-button");// select all the buttons with the class of .profile-button
+
+const buttons = document.querySelectorAll(".profile-buton");// select all the buttons with the class of .profile-button
 // Add event listener to each button
 ["daily", "weekly", "monthly"].forEach(timeframe => {// loop through each timeframe
     document.getElementById(timeframe).addEventListener("click", function () {// add an event listener to the button
