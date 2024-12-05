@@ -199,7 +199,7 @@ body {
 }
 
 .hover-white:hover {
-    color: white;
+    filter: brightness(0) invert(1);
 }
 
 .card-bottom {
