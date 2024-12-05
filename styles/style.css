@@ -146,7 +146,7 @@ body {
 
 .cards {
     width: 31.5%;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     border-radius: 1rem;
     overflow: hidden;
 }
