@@ -4,30 +4,30 @@
 
 // Fetch data from JSON file
 async function getJsonData() {
-    const response = await fetch("../data/data.json");// fetch the data from the data.json file
-    const data = await response.json();// convert the response to json
-    return data;// return the data
+    const response = await fetch("../data/data.json");
+    const data = await response.json();
+    return data;
 }
 
 // Display data on the page
 function displayData(data, timeframe) {
-    data.forEach(item => {// loop through each item in the data array
-        const card = document.getElementById(item.title.toLowerCase());// select the card with the id of the item title
+    data.forEach(timeTracked => {// loop through each item in the data array
+        const card = document.getElementById(timeTracked.title.toLowerCase());// select the card with the id of the title in the data array
         const current = card.querySelector("#current");// select the current element in the card
         const previous = card.querySelector("#previous");// select the previous element in the card
 
         // set the text content of the current element to the current hours using "template literal"
-        current.textContent = `${item.timeframes[timeframe].current}hrs`;
+        current.textContent = `${timeTracked.timeframes[timeframe].current}hrs`;
 
         // set the text content of the previous element to the previous hours and have the dynamic text for the timeframe using "template literal"
         const timeframeText = timeframe.charAt(0).toUpperCase() + timeframe.slice(1);// capitalize the first letter of the timeframe
-        const previousHours = item.timeframes[timeframe].previous;// get the previous hours
+        const previousHours = timeTracked.timeframes[timeframe].previous;// get the previous hours
         previous.textContent = `Last ${timeframeText} - ${previousHours}hrs`;// set the text content of the previous element
     });
 }
 
 
-const buttons = document.querySelectorAll(".profile-buton");
+const buttons = document.querySelectorAll(".profile-buton");// select all the buttons with the class of .profile-button
 // Add event listener to each button
 ["daily", "weekly", "monthly"].forEach(timeframe => {// loop through each timeframe
     document.getElementById(timeframe).addEventListener("click", function () {// add an event listener to the button
