@@ -1,6 +1,6 @@
 // Made by: robert g
 // inspiered by previous projects from Mr. C at the one school
-// added psudo code and notes to help read the code
+// added psudo code and notes to help read the code and if anyone wants to learn from it
 
 // Fetch data from JSON file
 async function getJsonData() {
@@ -26,12 +26,25 @@ function displayData(data, timeframe) {
     });
 }
 
+
+const buttons = document.querySelectorAll(".profile-buton");
 // Add event listener to each button
 ["daily", "weekly", "monthly"].forEach(timeframe => {// loop through each timeframe
-    document.getElementById(timeframe).addEventListener("click", () => {// add event listener to the button with the id of the timeframe
-        getJsonData().then(data => displayData(data, timeframe));// get the data and display it with the timeframe
+    document.getElementById(timeframe).addEventListener("click", function () {// add an event listener to the button
+        getJsonData().then(data => {// get the data from the json file
+            displayData(data, timeframe);// display the data with the timeframe
+
+            // to update button styles
+            buttons.forEach(btn => btn.style.color = ""); // Reset all buttons
+            this.style.color = "white"; // Set active button color
+            this.style.setProperty("color", "white", "important"); // Force important color
+        });
     });
 });
 
-// load it with the weekly data and display it
-getJsonData().then(data => displayData(data, "weekly"));
+// set the default active button to weekly (weekly)
+const defaultButton = document.getElementById("weekly");
+defaultButton.style.color = "white";
+defaultButton.style.setProperty("color", "white", "important"); // Force important color
+getJsonData().then(data => displayData(data, "weekly"));// load it with the weekly data and display it
+
