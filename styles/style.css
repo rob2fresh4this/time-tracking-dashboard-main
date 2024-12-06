@@ -198,6 +198,10 @@ body {
     color: #bdccff;
 }
 
+.card-bottom:hover{
+    background-color: #33397A !important;
+}
+
 .hover-white:hover {
     filter: brightness(0) invert(1);
 }
