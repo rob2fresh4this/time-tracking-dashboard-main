@@ -29,17 +29,18 @@
 -[11/25/24]
 
 # Review by: NAME LASTNAME
+Patton, Darryl
 
 ### Overall:
-
+Overall, Great job. Your code is really good. Well oraganized. And your UI is smooth.
 
 ### Suggestions:
--  
--
+-  You didn't add the hover over your cards.
+- though your site looks similar to the original, The cards are missing the certain style that the figma shows. each card has an overlapped layer
 - 
 
 ### Final Thoughts:
-
+Great job. Keep up the good work.
 
 ---
 
